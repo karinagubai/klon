@@ -23,7 +23,9 @@
         min-width: 600px;
         border-radius: 35px;
         margin-top: -25px;
+        z-index: 2;
       }
+      
     .section-videogalery__blok{
         display: flex;
         justify-content: space-between;
@@ -54,7 +56,7 @@
         display:block;
         text-decoration:none;
         color: yellow;
-        background: url(bgnav.png) repeat-x scroll 0 0 yellow;
+        background: url(../images/bgnav.png) repeat-x scroll 0 0 yellow;
         
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -72,7 +74,7 @@
     }
     .pagination ul li a:hover {
         display:block;
-        background: url(bgnav.png) repeat-x scroll 0 -24px red;
+        background: url(../images/bgnav.png) repeat-x scroll 0 -24px red;
         text-decoration:none;
     }
     .pagination ul li a:active {
@@ -152,3 +154,45 @@
     margin-top: 5px;
     color: #334155;
     }    
+
+    /* Ограничиваем максимальную ширину контента */
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    /* Добавляем фигуры  */
+
+    .section-videogalery {
+        position: relative; 
+    }
+    .section-videogalery .container,
+    .section-advantages {
+        position: relative;
+        z-index: 2; 
+    }
+
+    .round, .triangle {
+        position: absolute;
+    }
+
+    .round {
+        left: 320px;
+        top: 340px;
+    }
+
+    .triangle {
+        top: 30px;
+        left: 900px;
+    }
+
+    .wave {
+        position: absolute;
+        left: 0;
+        bottom: -250px;
+        width: 100%;
+        height: 516px;
+        background: url('../images/beige_wave.svg');
+    }
+
+    
